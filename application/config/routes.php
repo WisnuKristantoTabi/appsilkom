@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$route['default_controller'] = 'auth';
+$route['default_controller'] = 'welcome';
 $route['daftarmatakuliah'] = 'daftar_matakuliah';
 $route['matakuliah'] = 'courses/matakuliah';
 $route['matakuliah/add'] = 'courses/matakuliah/add';

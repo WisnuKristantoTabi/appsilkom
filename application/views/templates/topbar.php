@@ -18,6 +18,12 @@
         <div class="topbar-divider d-none d-sm-block"></div>
 
         <!-- Nav Item - User Information -->
+        <?php if ($user['name'] == null) { ?>
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="<?= base_url('auth') ?>" id="" role="button" >Login</a>
+
+            </li>
+        <?php  }else {?>
         <li class="nav-item dropdown no-arrow">
           <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $user['name']; ?></span>
@@ -36,7 +42,7 @@
             </a>
           </div>
         </li>
-
+    <?php } ?>
       </ul>
 
     </nav>

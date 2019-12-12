@@ -32,7 +32,7 @@
             <?php foreach ($matakuliah as $data) : ?>
               <tr>
                 <td><?= $data['kode_mk']; ?></td>
-                <td><a href="<?= base_url('daftar_matakuliah/detail/') . $data['id']; ?>"><?= $data['nama_mk']; ?></a></td>
+                <td><a href="<?= base_url('welcome/detail/') . $data['id']; ?>"><?= $data['nama_mk']; ?></a></td>
                 <td><?= $data['status']; ?></td>
               </tr>
             <?php endforeach; ?>
