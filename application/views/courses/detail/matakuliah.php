@@ -16,7 +16,7 @@
       <h6 class="m-0 font-weight-bold text-primary">Status : <?= $detail['status'] ?></h6>
       <h6 class="m-0 font-weight-bold text-primary">Deskripsi :<?= $detail['deskripsi_mk'] ?></h6>
 
-      <a href="<?= base_url('daftar_matakuliah'); ?>" class="btn btn-primary">Back</a>
+      <!-- <a href="<?= base_url('daftar_matakuliah'); ?>" class="btn btn-primary">Back</a> -->
 
     </div>
   </div>
