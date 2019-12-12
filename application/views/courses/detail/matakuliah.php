@@ -20,6 +20,9 @@
        ?>
       <?php  if ($urlsekarang == $urlbasewelcome) { ?>
           <a href="<?= base_url(''); ?>" class="btn btn-primary">Back</a>
+          <?php if ($user['name'] != null) { ?>
+              <a href="<?= base_url('admin'); ?>" class="btn btn-warning">Ke Halaman Dashboard</a>
+          <?php  } ?>
       <?php }else{?>
           <a href="<?= base_url('daftar_matakuliah'); ?>" class="btn btn-primary">Back</a>
       <?php } ?>
