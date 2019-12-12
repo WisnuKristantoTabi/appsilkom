@@ -1,4 +1,3 @@
-<!-- Begin Page Content -->
 <div class="container-fluid">
 
   <div class="card shadow m-4">
@@ -15,15 +14,8 @@
       <h6 class="m-0 font-weight-bold text-primary">Pengajar 2 : <?= $detail['pengajar2'] ?></h6>
       <h6 class="m-0 font-weight-bold text-primary">Status : <?= $detail['status'] ?></h6>
       <h6 class="m-0 font-weight-bold text-primary">Deskripsi :<?= $detail['deskripsi_mk'] ?></h6>
-       <?php $urlsekarang = current_url();
-            $urlbasewelcome = base_url ('welcome/detail/').$detail['id_mk'];
-       ?>
-      <?php  if ($urlsekarang == $urlbasewelcome) { ?>
-          <a href="<?= base_url(''); ?>" class="btn btn-primary">Back</a>
-      <?php }else{?>
-          <a href="<?= base_url('daftar_matakuliah'); ?>" class="btn btn-primary">Back</a>
-      <?php } ?>
 
+      <a href="<?= base_url(''); ?>" class="btn btn-primary">Back</a>
 
     </div>
   </div>

@@ -32,7 +32,15 @@
             <?php foreach ($matakuliah as $data) : ?>
               <tr>
                 <td><?= $data['kode_mk']; ?></td>
-                <td><a href="<?= base_url('welcome/detail/') . $data['id']; ?>"><?= $data['nama_mk']; ?></a></td>
+                <?php $urlsekarang = current_url();
+                     $urlbaselist = base_url ('daftar_matakuliah');
+                ?>
+               <?php  if ($urlsekarang == $urlbaselist) { ?>
+                   <td><a href="<?= base_url('daftar_matakuliah/detail/') . $data['id']; ?>"><?= $data['nama_mk']; ?></a></td>
+               <?php }else{?>
+                   <td><a href="<?= base_url('welcome/detail/') . $data['id']; ?>"><?= $data['nama_mk']; ?></a></td>
+               <?php } ?>
+
                 <td><?= $data['status']; ?></td>
               </tr>
             <?php endforeach; ?>
